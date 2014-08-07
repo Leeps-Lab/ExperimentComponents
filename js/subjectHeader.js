@@ -21,7 +21,7 @@ Redwood.directive("rwSubjectHeader", ["RedwoodSubject", function(rs) {
             timeRemaining: '=timeRemaining',
             timeTotal: '=timeTotal'
         },
-        templateUrl: "/static/components/html/subjectHeader.html"
+        templateUrl: "/static/ExperimentComponents/html/subjectHeader.html"
     };
 }]);
 
