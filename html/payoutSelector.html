@@ -1,7 +1,7 @@
 <div class="panel panel-default">
     <div class="panel-heading">Payout Controls</div>
     <div class="panel-body">
-        <div class="row form-group" ng-if="showPeriods">
+        <div class="row form-group" ng-hide="!showPeriods">
             <div class="col-sm-12 form-inline">
                 <label>Period: </label>
                 <select class="form-control" ng-model="selectedPeriod" ng-options="period for period in periods">

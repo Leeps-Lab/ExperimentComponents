@@ -22,7 +22,7 @@ Redwood.directive("rwPayoutSelector", ["Admin", function(ra) {
                     $scope.periods.push(i);
                 }
                 if (!$scope.selectedPeriod) {
-                    $scope.selectedPeriod = 1;
+                    $scope.selectedPeriod = 7;
                 }
             })
 
