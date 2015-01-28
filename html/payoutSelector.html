@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Payout Controls</div>
+    <div class="panel-body">
+        <div class="row form-group" ng-if="showPeriods">
+            <div class="col-sm-12 form-inline">
+                <label>Period: </label>
+                <select class="form-control" ng-model="selectedPeriod" ng-options="period for period in periods">
+                </select>
+                <button class="btn btn-primary" ng-click="selectPeriod()">Set Payoff Period</button>
+            </div>
+        </div>
+        <div class="row form-group" ng-repeat="field in fields">
+            <div class="col-sm-12 form-inline">
+                <label>{{field.name}}:</label>
+                <select class="form-control" ng-model="fieldSelections[field.key]" ng-options="option for option in field.options">
+                </select>
+                <button class="btn btn-primary" ng-click="selectField(field.key)">Set {{field.name}}</button>
+            </div>
+        </div>
+    </div>
+</div>
