@@ -16,16 +16,12 @@
     </tr>
     <tr class="warning">
       <td><strong>Show Up Fee</strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td ng-repeat="i in tablePadding track by $index"></td>
       <td style="text-align: right"><strong>{{showUpFee | currency}}</strong></td>
     </tr>
     <tr class="success">
       <td><strong>Total</strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td ng-repeat="j in tablePadding track by $index"></td>
       <td style="text-align: right">
         <strong>{{totalEarnings | currency}}</strong>
       </td>

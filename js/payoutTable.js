@@ -40,6 +40,7 @@ Redwood.directive("rwPayoutTable", ["RedwoodSubject", function(rs) {
             }
             $scope.showUpFee = 0;
             $scope.totalEarnings = 0;
+            $scope.tablePadding = Array($scope.fields.length - 1);
 
             rs.on("__set_show_up_fee__", function(data) {
                 $scope.showUpFee = Number(data.show_up_fee);
