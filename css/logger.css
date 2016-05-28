@@ -1,0 +1,30 @@
+.logger-terminal-wrap{
+   width:100%;
+   background-color:#EEE;
+   margin-top:10px;
+   font-family: Monospace;
+   font-size: 12px;
+   border: 1px solid black;
+}
+
+.logger-terminal-head{
+   background-color: #333;
+   color:white;
+   padding: 5px 8px 5px 8px;
+   width:100%;
+}
+
+.logger-terminal{
+   overflow: scroll;
+   padding: 5px 8px 5px 8px;
+   width:100%;
+   height:256px;
+}
+
+.logger-log-line{
+   color: black;
+}
+
+.logger-log-data-type{
+   color: orange;
+}
